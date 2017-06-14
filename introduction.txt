@@ -1,0 +1,99 @@
+https://github.com/wsargent/docker-cheat-sheet
+
+
+to run ubuntu
+$ docker run -i -t ubuntu /bin/bash
+
+$docker stop
+$docker rm (remove instance)
+
+
+to find ip in docker 
+docker-machine url
+
+docker explorer eclipse
+tcp://192.168.99.100:2376
+path
+C:\Users\BALASUBRAMANIAM\.docker\machine\certs
+
+docker run hello-world
+docker images
+docker ps -a
+Doclipser install new software
+https://dl.bintray.com/zenika/doclipser
+
+https://prakhar.me/docker-curriculum/
+
+For build a simple microservices system following steps required
+1.Creating Discovery Service (Creating Eureka Discovery Service)
+2.Creating MicroService (the Producer)
+     a.Register itself with Discovery Service with logical service.
+3.Create Microservice Consumers find Service registered with Discovery Service
+     a.Discovery client using a smart RestTemplate to find microservice.
+
+
+git clone https://github.com/spring-guides/gs-spring-boot-docker.git
+docker build -t image_name .
+docker run -p 8080:8080 -t gregturn/gs-spring-boot-docker
+
+access the image from
+
+http://192.168.99.100:8080/
+
+Docker swarm
+$ docker-machine ssh manager1
+
+$docker swarm init --advertise-addr MANAGER_IP
+$ docker node ls
+
+
+
+Docker Hub
+Go to Docker toolbox
+$docker login
+username:
+password:
+after login
+$docker tag first-image manjeet86/docker-repo:first-image
+$docker push manjeet86/docker-repo:first-image
+$docker pull tag:image pulls an image from DTR
+
+Docker Swarm
+docker-machine create --driver hyperv manager1
+
+docker-machine create --driver virtualbox manager1
+docker-machine create --driver virtualbox manager2
+docker-machine create --driver virtualbox manager3
+docker-machine create --driver virtualbox manager4
+docker-machine create --driver virtualbox manager5
+docker-machine ls
+//to get ip address
+docker-machine ip manager1
+//ssh
+//adding machine to cluster
+docker-machine ssh manager1
+
+docker-machine ssh manager1
+
+drivers
+Amazon Web Services
+Microsoft Azure
+Digital Ocean
+Exoscale
+Google Compute Engine
+Generic
+Microsoft Hyper-V
+OpenStack
+Rackspace
+IBM Softlayer
+Oracle VirtualBox
+VMware vCloud Air
+VMware Fusion
+VMware vSphere
+VMware Workstation (unofficial plugin, not supported by Docker)
+
+
+
+
+
+
